@@ -48,7 +48,7 @@ class WelcomePage extends StatelessWidget {
                     label: '" Cooking experience Like a Chef "',
                     highlight: Colors.green[900],
                     color: AppColors.MAIN_COLOR,
-                    onTap: () {
+                    onPressed: () {
                     },
                   ),
                   ThemeButton(
@@ -58,7 +58,7 @@ class WelcomePage extends StatelessWidget {
                     highlight: AppColors.MAIN_COLOR.withOpacity(0.5),
                     borderColor: AppColors.MAIN_COLOR,
                     borderWidth: 4,
-                    onTap: ()  {},
+                    onPressed: ()  {Navigator.pushNamed(context, '/tabs-screen');},
                   )
                     ],
                   ),
