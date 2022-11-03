@@ -1,5 +1,4 @@
 import 'package:first_app/helpers/appcolors.dart';
-import 'package:first_app/screens/tabs_screen.dart';
 import 'package:first_app/widgets/themebutton.dart';
 import 'package:flutter/material.dart';
 
@@ -17,15 +16,16 @@ class WelcomePage extends StatelessWidget {
             Positioned.fill(
               child: Opacity(
                 opacity: 0.3,
-                child: Image.asset('assets/images/of_main_bg.png', fit: BoxFit.cover),
+                child: Image.asset('assets/images/PP.png',
+                 fit: BoxFit.fitHeight),
                 ),
                 ),
                 Center(
                   child: Column(
                     mainAxisAlignment: MainAxisAlignment.center,
-                    crossAxisAlignment: CrossAxisAlignment.stretch,
+                    crossAxisAlignment: CrossAxisAlignment.center,
                     children: [
-                      SizedBox(height: 50),
+                      
                       Text('HungryByte',
                       textAlign: TextAlign.center,
                       style: TextStyle(
@@ -43,7 +43,7 @@ class WelcomePage extends StatelessWidget {
                         fontWeight: FontWeight.bold
                       )
                       ),
-                    SizedBox(height: 50),
+                    SizedBox(height: 480),
                   ThemeButton(
                     label: '" Cooking experience Like a Chef "',
                     highlight: Colors.green[900],
