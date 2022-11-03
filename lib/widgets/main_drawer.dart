@@ -31,23 +31,30 @@ class MainDrawer extends StatelessWidget {
             width: double.infinity,
             padding: EdgeInsets.all(20),
             alignment: Alignment.centerLeft,
-            color: Theme.of(context).accentColor,
+            color: Theme.of(context).primaryColorDark,
             child: Text(
               'Cooking Up!',
               style: TextStyle(
                   fontWeight: FontWeight.w900,
                   fontSize: 30,
-                  color: Theme.of(context).primaryColorDark),
+                  color: Colors.black),
             ),
           ),
           SizedBox(
             height: 20,
           ),
           buildListTile('Meals', Icons.restaurant, () {
-            Navigator.of(context).pushReplacementNamed('/');
+            Navigator.of(context).pushReplacementNamed('/tabs-screen');
           }),
-          buildListTile('Filters', Icons.settings, () {
+          buildListTile('Filters', Icons.filter, () {
             Navigator.of(context).pushReplacementNamed(FiltersScreen.routeName);
+          }),
+          buildListTile('Profile', Icons.person, () {}
+          ),
+          buildListTile('Settings', Icons.settings, () {}
+          ),
+          buildListTile('Logout', Icons.logout, () {
+            Navigator.of(context).pushReplacementNamed('/');
           }),
         ],
       ),

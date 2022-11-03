@@ -25,7 +25,7 @@ class WelcomePage extends StatelessWidget {
                     mainAxisAlignment: MainAxisAlignment.center,
                     crossAxisAlignment: CrossAxisAlignment.center,
                     children: [
-                      
+                      Spacer(flex: 2),
                       Text('HungryByte',
                       textAlign: TextAlign.center,
                       style: TextStyle(
