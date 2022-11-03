@@ -7,7 +7,7 @@ import 'package:flutter/material.dart';
 class ThemeButton extends StatelessWidget {
 
   String label;
-  Function onClick;
+  Function onTap;
   Color color;
   Color highlight;
   Widget icon;
@@ -23,7 +23,7 @@ class ThemeButton extends StatelessWidget {
     this.icon,
     this.borderColor = Colors.transparent,
     this.borderWidth = 4,
-    this.onClick, });
+    this.onTap, });
 
     @override 
     Widget build(BuildContext context) {
@@ -37,7 +37,7 @@ class ThemeButton extends StatelessWidget {
                 splashColor: this.highlight,
                 highlightColor: this.highlight,
                 onTap: () {
-                  this.onClick();
+                  this.onTap();
                 },
                 child: Container(
                   alignment: Alignment.center,

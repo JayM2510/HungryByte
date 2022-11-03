@@ -1,3 +1,5 @@
+import 'package:first_app/helpers/appcolors.dart';
+import 'package:first_app/screens/tabs_screen.dart';
 import 'package:first_app/widgets/themebutton.dart';
 import 'package:flutter/material.dart';
 
@@ -23,31 +25,41 @@ class WelcomePage extends StatelessWidget {
                     mainAxisAlignment: MainAxisAlignment.center,
                     crossAxisAlignment: CrossAxisAlignment.stretch,
                     children: [
+                      SizedBox(height: 50),
                       Text('HungryByte',
                       textAlign: TextAlign.center,
                       style: TextStyle(
-                        color: Colors.white,
+                        color: AppColors.MAIN_COLOR,
                         fontSize: 40,
                         fontWeight: FontWeight.bold
                       )
                       ),
-                      SizedBox(height: 20),
+                      SizedBox(height: 5),
                       Text('Provides Recipe',
                       textAlign: TextAlign.center,
                       style: TextStyle(
                         color: Colors.white,
                         fontSize: 18,
+                        fontWeight: FontWeight.bold
                       )
                       ),
-                      SizedBox(height: 40),
-                    
-                        ThemeButton(
-                    label: 'Tratar Ahora!',
-                    color: Colors.green,
-                    onClick: () {
-
+                    SizedBox(height: 50),
+                  ThemeButton(
+                    label: '" Cooking experience Like a Chef "',
+                    highlight: Colors.green[900],
+                    color: AppColors.MAIN_COLOR,
+                    onTap: () {
                     },
                   ),
+                  ThemeButton(
+                    label: "Get Started!",
+                    labelColor: AppColors.MAIN_COLOR,
+                    color: Colors.transparent,
+                    highlight: AppColors.MAIN_COLOR.withOpacity(0.5),
+                    borderColor: AppColors.MAIN_COLOR,
+                    borderWidth: 4,
+                    onTap: ()  {},
+                  )
                     ],
                   ),
                 )
